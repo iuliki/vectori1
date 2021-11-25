@@ -18,6 +18,9 @@ namespace vectori1
             MinMax(array);
 
 
+            int[] Nums = { 1, 2, 3, 1, 1, 3};
+            PerechiBuna(Nums);
+
         }
 
         static void PrintArray(int[] array)
@@ -88,6 +91,21 @@ namespace vectori1
 
             Console.WriteLine("minimul este " + min +" iar maximul este " + max);
 
+        }
+
+        static void PerechiBuna(int [] array)
+        {
+            int nr = 0;
+            for(int i=0;i<array.Length;i++)
+            {
+                for(int j=1;j<array.Length;j++)
+                    if(array[i]==array[j] && i<j)
+                    {
+                        nr++;
+                        Console.WriteLine("( " + i + " ," + j + " )");
+                    }
+            }
+            Console.WriteLine("exista " + nr + " perechi de numere");
         }
         
     }
