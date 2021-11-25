@@ -19,6 +19,7 @@ namespace vectori1
 
 
         }
+
         static void PrintArray(int[] array)
         {
             if (array is null)
