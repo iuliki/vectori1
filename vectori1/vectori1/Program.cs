@@ -23,6 +23,10 @@ namespace vectori1
             Console.WriteLine("\n");
 
             Fibonacci(5);
+            Console.WriteLine("\n");
+            int [] vector = { 1, 2, 3, 1, 2, 2, 5 }
+            frequencies(vector);
+
 
         }
 
@@ -133,5 +137,19 @@ namespace vectori1
            
         }
 
+        /*static void frequencies(int[] array)
+        {
+            a = array[0];
+            int fr[10];
+            for(int i=0;i<array.Length;i++)
+            {
+                fr[i]++;
+
+            }
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine(fr[i] + " ");
+            }
+        }*/
     }
 }
