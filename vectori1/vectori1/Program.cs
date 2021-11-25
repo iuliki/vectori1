@@ -20,6 +20,9 @@ namespace vectori1
 
             int[] Nums = { 1, 2, 3, 1, 1, 3};
             PerechiBuna(Nums);
+            Console.WriteLine("\n");
+
+            Fibonacci(5);
 
         }
 
@@ -107,6 +110,28 @@ namespace vectori1
             }
             Console.WriteLine("exista " + nr + " perechi de numere");
         }
-        
+
+        static void Fibonacci(int n)
+        {
+            
+            //Console.WriteLine("dati numarul n = ");
+           // l = Convert.ToInt32(Console.ReadLine());
+            int a = 1;
+            int b = 1;
+            int c;
+            Console.WriteLine(a + "\n" + b);
+
+            for(int i=1;i<n;i++)
+            {
+                c = a + b;
+                a = b;
+                b = c;
+                Console.WriteLine(c + " ");
+
+            }
+
+           
+        }
+
     }
 }
