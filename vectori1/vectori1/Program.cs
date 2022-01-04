@@ -6,7 +6,7 @@ namespace vectori1
     {
         static void Main(string[] args)
         {
-            int[] array = { 1, 2, 3, 4, 5, 6, 7, 8 };
+            int[] array = { 1, 34, 3, 78, 5, 6, 7, 8 };
             PrintArray(array);
             Console.WriteLine("\n");
             suma(array);
@@ -22,10 +22,14 @@ namespace vectori1
             PerechiBuna(Nums);
             Console.WriteLine("\n");
 
+
+            Console.WriteLine("Sirul lui Fibonacci este : ");
             Fibonacci(5);
             Console.WriteLine("\n");
-            int [] vector = { 1, 2, 3, 1, 2, 2, 5 }
-            frequencies(vector);
+
+
+            int[] vector = { 1, 2, 3, 1, 2, 2, 5 };
+            //frequencies(vector);
 
 
         }
