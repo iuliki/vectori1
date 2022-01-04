@@ -27,9 +27,10 @@ namespace vectori1
             Fibonacci(5);
             Console.WriteLine("\n");
 
-
+            Console.WriteLine("Frequencies of vector is : ");
             int[] vector = { 1, 2, 3, 1, 2, 2, 5 };
-            //frequencies(vector);
+
+            frequencies(vector);
 
 
         }
@@ -141,19 +142,22 @@ namespace vectori1
            
         }
 
-        /*static void frequencies(int[] array)
+        static void frequencies(int[] v)
         {
-            a = array[0];
-            int fr[10];
-            for(int i=0;i<array.Length;i++)
+            //int[] v = new int[100];
+            int[] fr = new int[10];
+            
+            for (int i=0;i<v.Length;i++)
             {
-                fr[i]++;
+                //v[i]= Int32.Parse(Console.ReadLine());
+                fr[v[i]]++;
 
             }
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine(fr[i] + " ");
+                if(fr[i]!=0)
+                 Console.WriteLine( i +" apare de " + fr[i] + " ");
             }
-        }*/
+        }
     }
 }
